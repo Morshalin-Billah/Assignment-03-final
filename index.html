@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 03 final</title>
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/4372370e85.js" crossorigin="anonymous"></script>
+
+        <!-- google font - manrope -->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind and daisy UI cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- vanilla css  -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+
+
+
+
+
+<body class="font-manrope">
+
+    <!-- 01. Navigation bar section  -->
+
+    <header class="mx-28 lg:mx-28 sm:mx-2">
+        <div class="navbar bg-base-100 items-center lg:py-8 sm:py-3">
+            <div class="navbar-start ">
+              <i class="fa-solid fa-bars fa-xl  lg:hidden sm:block sm:mr-3"></i>
+              <a class="font-extrabold text-3xl">Hockey<span class="text-red-500">'</span>s</a>
+            </div>
+
+            <div class="navbar-center hidden ">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-red-500 font-extrabold">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>                
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+              <i class="fa-solid fa-magnifying-glass fa-xl  sm:hidden lg:block"></i>
+              <a class="btn ml-3 bg-red-500 text-white">Get Ticket</a>
+            </div>
+          </div>
+
+
+
+
+          <!-- 02. Sliding banner section  -->
+
+          <div
+           class="carousel w-full lg:pb-8 sm:pb-3  ">
+
+
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-3/4">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- badge -->
+          <div class=" 
+        bg-black text-white rounded-lg p-4 text-center 
+
+          lg: w-96 lg:h-28 lg:absolute lg:top-[750px] lg:right-40 
+
+          sm:relative sm:top-0 sm:right-0 sm:h-32 sm:mx-auto
+          
+          ">
+            <h3 class="font-extrabold text-xl mb-2">Lorem, ipsum dolor</h3>
+            <p class=" ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illo hic explicabo?</p>
+          </div>
+
+
+    </header>
+    <!-- header ends here -->
+
+
+
+
+
+    <!-- main section starts from here  -->
+    <main class="mx-28 lg:mx-28 sm:mx-2">
+
+        <!-- 03. hockey club section  -->
+        
+        <div class="text-center mt-8 w-3/6 mx-auto bg-slate-600 my-4
+        lg:w-3/6 
+        sm:w-5/6
+        ">
+            <h2 class="font-extrabold text-4xl mb-5">Professional hockey club</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam perspiciatis vel cupiditate repellendus quibusdam doloremque eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, necessitatibus!</p>
+        </div>
+
+
+
+        <!-- radial progress section -->
+        <div class="grid grid-cols-4 mt-20 text-center mx-44  lg:grid lg:grid-cols-4 lg:mt-20 lg:w-full   sm:flex sm:flex-col sm:w-52 sm:mx-auto">
+            <div class="sm:mb-10 lg:mb-2">
+              <div class="radial-progress rotate-180 text-red-500 " style="--value:87;" role="progressbar"><span class="rotate-180">87%</span></div>
+              <h3 class="font-extrabold text-lg mt-4 mb-1">Prayer Facility</h3>
+              <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+
+            <div class="sm:mb-10 lg:mb-2">
+              <div class="radial-progress text-green-500 rotate-180" style="--value:95;" role="progressbar"><span class="rotate-180">95%</span></div>
+              <h3 class="font-extrabold text-lg mt-4 mb-1">Senior Player</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="sm:mb-10 lg:mb-2">  
+              <div class="radial-progress text-yellow-500 rotate-180" style="--value:90;" role="progressbar"><span class="rotate-180">90%</span></div>
+              <h3 class="font-extrabold text-lg mt-4 mb-1">Training Ground</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+
+            <div class="sm:mb-10 lg:mb-2">
+              <div class="radial-progress text-cyan-500 rotate-180" style="--value:80;" role="progressbar"><span class="rotate-180">80%</span></div>
+              <h3 class="font-extrabold text-lg mt-4 mb-1">Senior Player</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis.</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- 04. program section  -->
+        
+        <div class="text-center mt-8 w-3/6 mx-auto bg-slate-600 my-4
+        lg:w-3/6 
+        sm:w-5/6
+        ">
+            <h2 class="font-extrabold text-4xl mb-5">Program section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam perspiciatis vel cupiditate repellendus quibusdam doloremque eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, necessitatibus!</p>
+        </div>
+
+
+
+        <!-- Program grid  -->
+
+        <div class=" lg:h-[800px] lg:grid lg:grid-cols-2 lg:gap-5 mb-6">
+
+            <div class=" text-primary-content
+            bg-[url(images/2.png)] bg-no-repeat bg-cover w-full rounded-xl h-96
+            ">
+                <div class="card-body relative top-40 lg:w-3/4">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto non ullam ipsa</p>
+                  <button class="btn w-36 bg-red-500 border-0 text-white font-extrabold text-lg">Buy Now</button>
+                </div>
+            </div>
+
+            <div class=" text-primary-content lg:my-0 sm:my-6
+            bg-[url(images/3.png)] bg-no-repeat bg-cover w-full rounded-xl h-96
+            ">
+                <div class="card-body relative top-40 lg:w-3/4">
+                  <h2 class="card-title">Card title!</h2>
+                  <p class="">If a dog chews shoes whose shoes does he choose?Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, consequuntur.</p>
+                  <button class="btn w-36 bg-red-500 border-0 text-white font-extrabold text-lg">Buy Now</button>
+                </div>
+            </div>
+
+            <div class=" text-primary-content
+            bg-[url(images/4.png)] bg-no-repeat bg-cover w-full lg:col-span-2 rounded-xl h-96
+            ">
+                <div class="card-body relative top-40 lg:w-3/4">
+                  <h2 class="card-title">Card title!</h2>
+                  <p class="">If a dog chews shoes whose shoes does he choose?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, porro.</p>
+                  <button class="btn w-36 bg-red-500 border-0 text-white font-extrabold text-lg">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- 05. Our New Products section  -->
+        
+        <div class="text-center mt-8 w-3/6 mx-auto bg-slate-600 my-4
+        lg:w-3/6 
+        sm:w-5/6
+        ">
+            <h2 class="font-extrabold text-4xl mb-5">Our New Products</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam perspiciatis vel cupiditate repellendus quibusdam doloremque eaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, necessitatibus!</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+
+
+
+
+</body>
+
+</html>
